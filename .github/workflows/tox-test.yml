@@ -65,6 +65,8 @@ jobs:
       # accessible to Codecov.
       - name: Install pytest cov
         run: pip install pytest-cov
+      - name: Install npm
+        run: npm install --global npm    
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
