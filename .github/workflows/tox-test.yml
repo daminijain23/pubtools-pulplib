@@ -58,7 +58,7 @@ jobs:
       - name: Install Tox
         run: pip install tox
       - name: Install npm
-        run: npm install --global npm
+        run: npm install -g npm@latest
 
       - name: Run Tox
         run: tox -e cov
